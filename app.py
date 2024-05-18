@@ -7,9 +7,6 @@ from flask_cors import CORS
 import nltk
 import os
 
-# download movie_reviews from nltk
-nltk.download('movie_reviews')
-
 # initialize app
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('secret_key')
