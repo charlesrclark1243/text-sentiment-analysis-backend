@@ -30,7 +30,7 @@ def sanity_check():
 @app.route('/analyze', methods=['POST'])
 def analyze():
     if request.method == 'POST':
-        print(request.form)
+        # print(request.form)
 
         text = request.form['text']
         tb = Blobber(analyzer=analyzer)
