@@ -7,6 +7,9 @@ from flask_cors import CORS
 import nltk
 import os
 
+# download wordnet corpus
+nltk.download('wordnet')
+
 # initialize app
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('secret_key')
