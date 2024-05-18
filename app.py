@@ -12,7 +12,7 @@ nltk.download('movie_reviews')
 
 # initialize app
 app = Flask(__name__)
-# app.config['SECRET_KEY'] = os.environ.get('secret_key')
+app.config['SECRET_KEY'] = os.environ.get('secret_key')
 
 CORS(app, resources=r'/*')
 
@@ -48,6 +48,6 @@ def analyze():
         }
 
 if __name__ == '__main__':
-    # app.secret_key = os.environ.get('SECRET_KEY')
-    app.secret_key = os.urandom(12)
+    app.secret_key = os.environ.get('SECRET_KEY')
+    # app.secret_key = os.urandom(12)
     app.run(debug=True)
