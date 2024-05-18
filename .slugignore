@@ -1,0 +1,3 @@
+# .slugignore for heroku deployment
+
+README.md
