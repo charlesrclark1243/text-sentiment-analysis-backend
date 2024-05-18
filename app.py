@@ -10,7 +10,7 @@ import os
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('secret_key')
 
-CORS(app, r'/*')
+CORS(app, resources=r'/*')
 
 # initialize NaiveBayesAnalyzer for sentiment analysis
 analyzer = NaiveBayesAnalyzer()
