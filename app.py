@@ -1,7 +1,7 @@
 from textblob import Blobber
 from textblob.en.sentiments import NaiveBayesAnalyzer
 
-from flask import Flask, request, session
+from flask import Flask, request
 from flask_cors import CORS
 
 import os
