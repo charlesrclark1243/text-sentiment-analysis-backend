@@ -8,7 +8,7 @@ import nltk
 import os
 
 # download wordnet corpus
-nltk.download('wordnet')
+nltk.download('movie_reviews')
 
 # initialize app
 app = Flask(__name__)
