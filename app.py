@@ -38,8 +38,8 @@ def analyze(epsilon=0.2):
         
         return {
             'prediction': pred,
-            'p_pos': p_pos,
-            'p_neg': p_neg
+            'p_pos': round(p_pos, 4),
+            'p_neg': round(p_neg, 4)
         }
 
 if __name__ == '__main__':
